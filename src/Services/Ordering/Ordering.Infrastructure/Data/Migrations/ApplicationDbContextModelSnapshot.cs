@@ -101,7 +101,7 @@ namespace Ordering.Infrastructure.Data.Migrations
                                 .HasMaxLength(50)
                                 .HasColumnType("nvarchar(50)");
 
-                            b1.Property<string>("EmailName")
+                            b1.Property<string>("EmailAddress")
                                 .HasMaxLength(50)
                                 .HasColumnType("nvarchar(50)");
 
@@ -146,6 +146,10 @@ namespace Ordering.Infrastructure.Data.Migrations
                                 .HasMaxLength(3)
                                 .HasColumnType("nvarchar(3)");
 
+                            b1.Property<string>("CardName")
+                                .HasMaxLength(50)
+                                .HasColumnType("nvarchar(50)");
+
                             b1.Property<string>("CardNumber")
                                 .IsRequired()
                                 .HasMaxLength(24)
@@ -174,7 +178,7 @@ namespace Ordering.Infrastructure.Data.Migrations
                                 .HasMaxLength(50)
                                 .HasColumnType("nvarchar(50)");
 
-                            b1.Property<string>("EmailName")
+                            b1.Property<string>("EmailAddress")
                                 .HasMaxLength(50)
                                 .HasColumnType("nvarchar(50)");
 
